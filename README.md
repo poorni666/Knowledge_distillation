@@ -20,7 +20,7 @@ Knowledge Distillation transfers knowledge from a large teacher model to a small
 - **Soft Targets:** Using the teacher’s softened output probabilities to guide the student’s learning beyond hard labels.
 
 ## Code Structure
-
+- `main.py` —  Main script to initialize models, set hyperparameters, execute training and evaluation.
 - `teacher_core.py` — Teacher training logic  
 - `student_core.py` — Student training logic  
 - `distillation_loss.py` — Implementation of combined loss function  
