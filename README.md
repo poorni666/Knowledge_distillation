@@ -9,7 +9,7 @@ Knowledge Distillation transfers knowledge from a large teacher model to a small
 ## Key Contributions
 
 - **Teacher Model Fine-tuning:** Adapted the teacher model to the target dataset to provide reliable guidance for the student.
-- **Robust Student Training:** Combined hard (cross-entropy), soft (KL divergence), and intermediate feature losses with hyperparameter tuning to optimize training effectiveness and knowledge transfer.
+- **Robust Student Training:** Combined hard (cross-entropy), soft (KL divergence), and intermediate feature losses with hyperparameter tuning to optimize robust student model.
 - **Hyperparameter Tuning:** Tuned temperature and alpha as key hyperparameters. Applied dynamic scheduling — temperature decays from 5.0 to 1.0 to gradually sharpen the teacher’s outputs, while alpha decreases to shift focus from soft to hard targets. This allows the student to learn more effectively from the teacher in early stages, then rely more on ground-truth supervision, leading to better convergence and generalization compared to fixed values.
 - **Comprehensive Evaluation:** Compared teacher, student with knowledge distillation, student with distillation after hyperparameter tuning, and student without distillation by measuring accuracy, parameter count, and inference latency to highlight efficiency and performance improvements.
 - **Modular & Reproducible Codebase:** Clean architecture allowing easy experimentation, fine-tuning, and extension.
