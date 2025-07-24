@@ -1,6 +1,6 @@
 # Knowledge Distillation for Deep Learning Models
 
-This repository contains the implementation of Knowledge Distillation to train a smaller student model (ResNet30) using a larger pre-trained and fine-tuned teacher model (ResNet50) on the CIFAR dataset. This project was completed as the final assignment for the Deep Learning course.
+This repository contains the implementation of Knowledge Distillation to train a smaller student model (ResNet18) using a larger pre-trained and fine-tuned teacher model (ResNet50) on the CIFAR dataset. This project was completed as the final assignment for the Deep Learning course.
 
 ## Overview
 
